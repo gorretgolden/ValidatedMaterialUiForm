@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                //validations
 
                 if (name.isEmpty()) {
-                    username.setError("Username is required");
+                    username.setError("Please provide your username");
                 }
 
                 if (email_address.isEmpty()) {
@@ -53,17 +53,23 @@ public class MainActivity extends AppCompatActivity {
                     pas1.setError("Please enter your passward");
                 }
 
+                if (passward1.length()<8) {
+                    pas1.setError("Your password is too short!");
+                }
+
                 if (passward2.isEmpty()) {
                     pas2.setError("Please confirm your passward");
                 }
 
-                if (passward1 != passward2) {
-
+                if (passward2!=passward1){
                     pas2.setError("Passwards don't match");
                 } else {
-                    Toast.makeText(MainActivity.this, "You successfully created a new user account!", Toast.LENGTH_SHORT).show();
 
+
+                    Toast.makeText(MainActivity.this, "You successfully created a new account!", Toast.LENGTH_SHORT).show();
                 }
+
+
             }
         });
     }

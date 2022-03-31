@@ -19,8 +19,8 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:text="Sign Up Here"
-                android:textSize="20sp"
+                android:text="Register Here"
+                android:textSize="25sp"
                 android:layout_margin="20dp"
                 android:textStyle="bold"
                 android:layout_height="match_parent"/>
@@ -38,6 +38,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:inputType="text"
+                android:layout_marginBottom="30dp"
                 android:drawableEnd="@drawable/ic_baseline_account_circle_24"
                 android:drawableTint="@color/purple_500"
                 android:hint="Enter your username"
@@ -57,6 +58,7 @@
                 android:hint="@string/email"
                 android:id="@+id/email"
                 android:inputType="text"
+                android:layout_marginBottom="30dp"
                 android:drawableEnd="@drawable/ic_baseline_email_24"
                 android:drawableTint="@color/purple_500"
                 android:layout_height="wrap_content" />
@@ -69,7 +71,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-        
+
 
 
             >
@@ -78,6 +80,7 @@
                 android:inputType="number"
                 android:drawableTint="@color/purple_500"
                 android:hint="@string/enter_your_phone_number"
+                android:layout_marginBottom="30dp"
                 android:id="@+id/phone_number"
                 android:drawableEnd="@drawable/ic_baseline_phone_24"
                 android:layout_height="wrap_content" />
@@ -97,6 +100,7 @@
                 android:layout_width="match_parent"
                 android:inputType="textPassword"
                 android:id="@+id/password1"
+                android:layout_marginBottom="30dp"
                 android:layout_height="wrap_content" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -115,6 +119,7 @@
                 android:layout_width="match_parent"
                 android:inputType="textPassword"
                 android:id="@+id/confirm_pasword"
+                android:layout_marginBottom="30dp"
                 android:layout_height="wrap_content" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -125,6 +130,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/sign_up"
+            android:textSize="20sp"
             android:layout_marginTop="20dp"
             android:layout_margin="20dp"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
@@ -134,8 +140,9 @@
             android:layout_width="match_parent"
             android:text="Already have an account? | Login"
             android:textSize="20sp"
-            android:layout_margin="20dp"
             android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="30dp"
             android:layout_height="match_parent"/>
 
     </LinearLayout>
