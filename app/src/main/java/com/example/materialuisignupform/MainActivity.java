@@ -61,12 +61,13 @@ public class MainActivity extends AppCompatActivity {
                     pas2.setError("Please confirm your passward");
                 }
 
-                if (passward2!=passward1){
-                    pas2.setError("Passwards don't match");
+                if (passward2.equals(passward1)){
+                    Toast.makeText(MainActivity.this, "You successfully created a new account!", Toast.LENGTH_SHORT).show();
+
                 } else {
 
+                    pas2.setError("Passwards don't match");
 
-                    Toast.makeText(MainActivity.this, "You successfully created a new account!", Toast.LENGTH_SHORT).show();
                 }
 
 
