@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MaterialUiSignUpForm</string>
+    <string name="email">Enter your email</string>
+    <string name="contact">Enter your contact</string>
+    <string name="password">Enter your password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="enter_your_phone_number">Enter your phone number</string>
+</resources>
