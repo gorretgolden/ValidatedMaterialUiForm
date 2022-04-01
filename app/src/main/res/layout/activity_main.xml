@@ -14,6 +14,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:orientation="vertical"
+            android:layout_marginTop="30dp"
             android:layout_height="wrap_content">
 
 
@@ -21,9 +22,16 @@
                 android:layout_width="match_parent"
                 android:text="Register Here"
                 android:textSize="25sp"
-                android:layout_margin="20dp"
                 android:textStyle="bold"
+                android:layout_marginLeft="90dp"
                 android:layout_height="match_parent"/>
+            <ImageView
+                android:id="@+id/wlcmimg"
+                android:layout_width="wrap_content"
+                android:src="@drawable/register"
+                android:layout_marginRight="20dp"
+                android:layout_height="150dp"/>
+
         </LinearLayout>
 
 
@@ -126,22 +134,24 @@
 
 
         <Button
-            android:id="@+id/login_button"
+            android:id="@+id/signup_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/sign_up"
             android:textSize="20sp"
+            android:background="@drawable/buttonshape"
             android:layout_marginTop="20dp"
             android:layout_margin="20dp"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+
             />
 
         <TextView
             android:layout_width="match_parent"
+            android:id="@+id/text_to_togin"
             android:text="Already have an account? | Login"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="30dp"
             android:layout_marginBottom="30dp"
             android:layout_height="match_parent"/>
 
