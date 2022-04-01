@@ -20,6 +20,7 @@ public class LoginActivity extends Activity {
     String user_password = "#golden@";
     String user_email = "nabatanzigorret143@gmail.com";
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,8 +32,6 @@ public class LoginActivity extends Activity {
         text_to_register = (TextView) findViewById(R.id.text_to_register);
         back = findViewById(R.id.back);
 
-
-
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -43,7 +42,6 @@ public class LoginActivity extends Activity {
 
 
                 //validations
-
 
                 if (email_address.isEmpty()) {
                     email.setError("Please provide your email address ");
@@ -72,8 +70,6 @@ public class LoginActivity extends Activity {
                     Toast.makeText(LoginActivity.this, "All fields must be valid", Toast.LENGTH_SHORT).show();
 
                 }
-
-
 
 
             }
